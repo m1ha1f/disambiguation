@@ -13,8 +13,8 @@ def glossOverlap(gloss1, gloss2):
 	'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down', 
 	'in', 'out', 'on', 'off', 'over', 'under', 'then',  
 	'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each',
-	'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 
-	'too', 'very', 's', 't', 'just', 'don', 'now']
+	'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 
+	'than', 's', 't', 'just', 'don']
 
 	stemmer = PorterStemmer()
 
