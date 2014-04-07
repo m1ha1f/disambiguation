@@ -1,0 +1,3 @@
+from overlap import *
+
+testGlossOverlap()
