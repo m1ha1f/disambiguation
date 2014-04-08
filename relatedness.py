@@ -4,6 +4,7 @@ from overlap import glossOverlap
 HYPE = 'hypernymy'
 HYPO = 'hyponymy'
 GLOSS = 'gloss'
+MERONYMY = 'meronymy'
 
 def getRelationGloss(synset, r):
 	synsets = []
@@ -13,6 +14,8 @@ def getRelationGloss(synset, r):
 		synsets = synset.hyponyms()
 	elif r == GLOSS:
 		synsets = [synset]
+	elif r == MERONYMY:
+		synsets = synset.member_meronyms() + synset.part_meronyms() + synset.substance_meronyms()
 	else:
 		#to do: add other relations if necessary
 		raise Exception("Unknown relation %s" % r)
