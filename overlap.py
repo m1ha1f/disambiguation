@@ -106,6 +106,11 @@ def testGlossOverlap():
 
 	assert(glossOverlap(gloss1, gloss2) == 5)
 
+	gloss1 = "a self-propelled wheeled vehicle that does not run on rails"
+	gloss2 = "a self-propelled wheeled vehicle that does not run on rails"
+
+	assert(glossOverlap(gloss1, gloss2) == 100)
+
 
 
 
